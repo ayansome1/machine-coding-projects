@@ -35,7 +35,9 @@ const NewTask = ({ handleNewTaskAdd }) => {
       <select onChange={handleOptionChange} value={taskState}>
         <option>Please choose one option</option>
         {options.map((val) => (
-          <option value={val}>{val}</option>
+          <option value={val} key={val}>
+            {val}
+          </option>
         ))}
       </select>
       <button onClick={handleAddTask}>Add task</button>
