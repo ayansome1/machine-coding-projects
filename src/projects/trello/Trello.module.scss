@@ -1,0 +1,19 @@
+.boardParent {
+  display: flex;
+}
+
+.board {
+  flex-grow: 1;
+  margin: 10px;
+  border: 2px solid black;
+}
+
+.boardTitle {
+  text-align: center;
+}
+
+.task {
+  margin: 10px;
+  border: 1px solid lightgrey;
+  padding: 10px;
+}

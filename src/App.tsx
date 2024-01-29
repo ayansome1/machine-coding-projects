@@ -1,5 +1,11 @@
+import Trello from './projects/trello/Trello';
+
 function App() {
-  return <>hi</>;
+  return (
+    <div>
+      <Trello />
+    </div>
+  );
 }
 
 export default App;
