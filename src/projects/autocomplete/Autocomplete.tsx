@@ -1,14 +1,16 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
+import styles from './Autocomplete.module.scss';
+import { useClickOutside } from './utils';
 
 type AutocompleteProps = {
-  renderOption: (data: any) => React.ReactNode;
+  renderOption?: (data: any) => React.ReactNode;
   options: Array<any>;
   onInputChange: (val: string) => void;
   onSelect: (val: any) => void;
   maxSize: number;
   debounceDuration?: number;
-  inputValue: string;
-  // getOptionLabel: (val: any) => string;
+  getOptionLabel?: (val: any) => string;
+  filterCriteria?: (option, inputText) => any;
 };
 
 // const debounced
@@ -20,24 +22,50 @@ const Autocomplete = ({
   maxSize = 3,
   // debounceDuration = 0,
   onSelect,
-  inputValue,
-}: // getOptionLabel,
-AutocompleteProps) => {
-  // const [inputText, setInputText] = useState<string>('');
+  getOptionLabel = (val) => val,
+  filterCriteria,
+}: AutocompleteProps) => {
+  const [inputText, setInputText] = useState<string>('');
+  const [isOpen, setIsOpen] = useState(false);
+
+  const divRef = useRef(null);
+
+  const handleClickOutside = () => {
+    setIsOpen(false);
+  };
+
+  useClickOutside(divRef, handleClickOutside);
 
   const handleOnInputchange = (e) => {
-    // setInputText(e.target.value);
+    setInputText(e.target.value);
     onInputChange(e.target.value);
   };
   const onOptionSelect = (option: any) => {
     onSelect(option);
+    setInputText(getOptionLabel(option));
+    setIsOpen(false);
   };
+  const getOptions = () => {
+    return options
+      .filter((option) => {
+        return filterCriteria(option, inputText);
+      })
+      .slice(0, maxSize)
+      .map((val) => (
+        <div className={styles.option} onClick={() => onOptionSelect(val)}>
+          {renderOption ? renderOption(val) : getOptionLabel(val)}
+        </div>
+      ));
+  };
+
   return (
-    <div>
-      <input onChange={handleOnInputchange} value={inputValue} />
-      {options.slice(0, maxSize).map((val) => (
-        <div onClick={() => onOptionSelect(val)}>{renderOption(val)}</div>
-      ))}
+    <div className={styles.autocompleteParent} ref={divRef}>
+      <input
+        onChange={handleOnInputchange}
+        value={inputText}
+        onFocus={() => setIsOpen(true)}
+      />
+      {isOpen && <div className={styles.optionsParent}>{getOptions()}</div>}
     </div>
   );
 };

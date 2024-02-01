@@ -24,50 +24,34 @@ const options = [
 ];
 
 const AutocompleteContainer = () => {
-  const [filteredOptions, setFilteredOptions] = useState([]);
-  const [value, setValue] = useState(null);
-  const [inputValue, setInputValue] = useState('');
-
   const onInputChange = (val) => {
-    setInputValue(val);
     console.log(val);
-    if (val === '') {
-      setFilteredOptions([]);
-      return;
-    }
-    const res = options.filter((option) => {
-      if (
-        option.city.toLowerCase().includes(val.toLowerCase()) ||
-        option.state.toLowerCase().includes(val.toLowerCase())
-      ) {
-        return option;
-      }
-    });
-    console.log(res);
-    setFilteredOptions(res);
   };
   const onSelect = (option) => {
     console.log(option);
-    setValue(option);
-    setInputValue(option.city);
-    setFilteredOptions([]);
+  };
+  const optionsFilter = (option, inputText) => {
+    return (
+      option.city.toLowerCase().includes(inputText.toLowerCase()) ||
+      option.state.toLowerCase().includes(inputText.toLowerCase())
+    );
   };
   return (
-    <Autocomplete
-      options={filteredOptions}
-      renderOption={(val) => (
-        <div className={styles.option}>
-          <strong>{val.city}</strong>
-          {val.state}
-        </div>
-      )}
-      onInputChange={onInputChange}
-      maxSize={5}
-      onSelect={onSelect}
-      inputValue={inputValue}
-      // value={value}
-      // getOptionLabel={(val) => val.city}
-    />
+    <div className={styles.autocompleteContainer}>
+      <Autocomplete
+        options={options}
+        renderOption={(val) => (
+          <div className={styles.option}>
+            <strong>{val.city}</strong>,{val.state}
+          </div>
+        )}
+        onInputChange={onInputChange}
+        maxSize={5}
+        onSelect={onSelect}
+        getOptionLabel={(val) => val.city}
+        filterCriteria={optionsFilter}
+      />
+    </div>
   );
 };
 
