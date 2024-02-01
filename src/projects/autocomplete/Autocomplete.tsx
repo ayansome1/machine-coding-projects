@@ -48,7 +48,11 @@ const Autocomplete = ({
   const getOptions = () => {
     return options
       .filter((option) => {
-        return filterCriteria(option, inputText);
+        if (filterCriteria) {
+          return filterCriteria(option, inputText);
+        } else {
+          return option.toLowerCase().includes(inputText);
+        }
       })
       .slice(0, maxSize)
       .map((val) => (

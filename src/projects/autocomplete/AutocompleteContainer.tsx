@@ -51,6 +51,12 @@ const AutocompleteContainer = () => {
         getOptionLabel={(val) => val.city}
         filterCriteria={optionsFilter}
       />
+      <Autocomplete
+        options={['ayan', 'debjit', 'some', 'aryan']}
+        onInputChange={onInputChange}
+        maxSize={5}
+        onSelect={onSelect}
+      />
     </div>
   );
 };
