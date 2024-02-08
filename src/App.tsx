@@ -3,6 +3,7 @@ import AutocompleteContainer from './projects/autocomplete/AutocompleteContainer
 import Test from './projects/test/Test';
 import Modal from './projects/modal/Modal';
 import ModalTest from './projects/modal/ModalTest';
+import Light from './projects/gridLights/Light';
 
 function App() {
   return (
@@ -10,8 +11,9 @@ function App() {
       <div>{/* <Trello /> */}</div>
       <div>{/* <AutocompleteContainer /> */}</div>
       <div>{/* <Test /> */}</div>
+      <div>{/* <ModalTest /> */}</div>
       <div>
-        <ModalTest />
+        <Light />
       </div>
     </>
   );

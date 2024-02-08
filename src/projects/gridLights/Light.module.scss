@@ -1,0 +1,14 @@
+.wrapper {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.box {
+  height: 100px;
+}
+
+.enabled {
+  background-color: darkgreen;
+}
