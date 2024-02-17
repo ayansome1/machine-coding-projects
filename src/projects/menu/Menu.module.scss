@@ -1,0 +1,26 @@
+.menuContainer {
+  display: inline-block;
+}
+
+.menuListContainer {
+  border: 1px solid lightgray;
+  padding: 6px 0px;
+  margin-top: 10px;
+}
+
+.menuItemContainer {
+  padding: 4px 16px;
+}
+
+.menuItemContainer:not(.menuItemDisabled) {
+  cursor: pointer;
+}
+
+.menuItemContainer:not(.menuItemDisabled):hover {
+  background-color: lightgray;
+}
+
+.menuItemDisabled {
+  color: lightgray;
+  pointer-events: none;
+}

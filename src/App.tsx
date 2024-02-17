@@ -5,6 +5,10 @@ import Modal from './projects/modal/Modal';
 import ModalTest from './projects/modal/ModalTest';
 import Light from './projects/gridLights/Light';
 import Carousel from './projects/imageCarousel/Carousel';
+import Menu from './projects/menu/Menu';
+import MenuTarget from './projects/menu/MenuTarget';
+import MenuList from './projects/menu/MenuList';
+import MenuItem from './projects/menu/MenuItem';
 
 function App() {
   return (
@@ -15,7 +19,7 @@ function App() {
       <div>{/* <ModalTest /> */}</div>
       <div>{/* <Light /> */}</div>
       <div>
-        <Carousel
+        {/* <Carousel
           images={[
             {
               src: 'https://picsum.photos/id/1/200/300',
@@ -46,7 +50,25 @@ function App() {
               alt: 'fork',
             },
           ]}
-        />
+        /> */}
+      </div>
+      <div>
+        <Menu>
+          <MenuTarget>
+            <button>Actions</button>
+          </MenuTarget>
+          <MenuList>
+            <MenuItem>open modal</MenuItem>
+            <MenuItem disabled>new tab</MenuItem>
+            <MenuItem
+              onClick={() => {
+                console.log('clicked me');
+              }}
+            >
+              item 3
+            </MenuItem>
+          </MenuList>
+        </Menu>
       </div>
     </>
   );
