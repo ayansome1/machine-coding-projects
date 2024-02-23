@@ -9,6 +9,7 @@ import Menu from './projects/menu/Menu';
 import MenuTarget from './projects/menu/MenuTarget';
 import MenuList from './projects/menu/MenuList';
 import MenuItem from './projects/menu/MenuItem';
+import InfiniteScroll from './projects/infiniteScroll/InfiniteScroll';
 
 function App() {
   return (
@@ -53,7 +54,7 @@ function App() {
         /> */}
       </div>
       <div>
-        <Menu>
+        {/* <Menu>
           <MenuTarget>
             <button>Actions</button>
           </MenuTarget>
@@ -68,7 +69,10 @@ function App() {
               item 3
             </MenuItem>
           </MenuList>
-        </Menu>
+        </Menu> */}
+      </div>
+      <div>
+        <InfiniteScroll />
       </div>
     </>
   );
