@@ -12,8 +12,8 @@ import MenuItem from './projects/menu/MenuItem';
 import InfiniteScroll from './projects/infiniteScroll/InfiniteScroll';
 import HeaderFooter from './projects/headerFooterLayout/HeaderFooter';
 import ProgressBars from './projects/progressBars1/ProgressBars';
-import Tabs from './projects/tabs/Tabs';
-import TabsTest from './projects/tabs/TabsTest';
+import Tabs from './projects/tabs1/Tabs';
+import TabsTest from './projects/tabs1/TabsTest';
 function App() {
   return (
     <>
