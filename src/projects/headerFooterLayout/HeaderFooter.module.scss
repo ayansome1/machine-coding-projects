@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  background-color: red;
+  height: 60px;
+}
+
+.footer {
+  background-color: yellow;
+  height: 100px;
+}
+
+.content {
+  display: flex;
+  flex-grow: 1;
+}
+
+.nav {
+  background-color: green;
+  width: 100px;
+  flex-shrink: 0;
+}
+
+.main {
+  background-color: gray;
+  flex-grow: 1;
+}
+
+.aside {
+  background-color: cyan;
+  width: 100px;
+  flex-shrink: 0;
+}

@@ -10,6 +10,7 @@ import MenuTarget from './projects/menu/MenuTarget';
 import MenuList from './projects/menu/MenuList';
 import MenuItem from './projects/menu/MenuItem';
 import InfiniteScroll from './projects/infiniteScroll/InfiniteScroll';
+import HeaderFooter from './projects/headerFooterLayout/HeaderFooter';
 
 function App() {
   return (
@@ -71,8 +72,9 @@ function App() {
           </MenuList>
         </Menu> */}
       </div>
+      <div>{/* <InfiniteScroll /> */}</div>
       <div>
-        <InfiniteScroll />
+        <HeaderFooter />
       </div>
     </>
   );
