@@ -11,7 +11,7 @@ import MenuList from './projects/menu/MenuList';
 import MenuItem from './projects/menu/MenuItem';
 import InfiniteScroll from './projects/infiniteScroll/InfiniteScroll';
 import HeaderFooter from './projects/headerFooterLayout/HeaderFooter';
-
+import ProgressBars from './projects/progressBars1/ProgressBars';
 function App() {
   return (
     <>
@@ -73,8 +73,9 @@ function App() {
         </Menu> */}
       </div>
       <div>{/* <InfiniteScroll /> */}</div>
+      <div>{/* <HeaderFooter /> */}</div>
       <div>
-        <HeaderFooter />
+        <ProgressBars />
       </div>
     </>
   );

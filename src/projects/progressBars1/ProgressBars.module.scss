@@ -1,0 +1,16 @@
+.default {
+  background-color: lightgray;
+  margin-top: 10px;
+  height: 10px;
+}
+
+.progress {
+  background-color: green;
+  transition: transform 10000ms linear;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.progress-1 {
+  transform: scaleX(1);
+}
