@@ -1,0 +1,11 @@
+.bar {
+  height: 10px;
+  background-color: green;
+  transform: scaleX(0);
+  transition: transform 3000ms linear;
+  transform-origin: left;
+}
+
+.active {
+  transform: scaleX(1);
+}

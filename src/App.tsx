@@ -15,6 +15,7 @@ import ProgressBars from './projects/progressBars1/ProgressBars';
 import Tabs from './projects/tabs1/Tabs';
 import TabsTest from './projects/tabs1/TabsTest';
 import Like from './projects/like/Like';
+import ProgressBarsSequential from './projects/progressBars2/ProgressBarsSequential';
 function App() {
   return (
     <>
@@ -79,8 +80,9 @@ function App() {
       <div>{/* <HeaderFooter /> */}</div>
       <div>{/* <ProgressBars /> */}</div>
       <div>{/* <TabsTest /> */}</div>
+      <div>{/* <Like /> */}</div>
       <div>
-        <Like />
+        <ProgressBarsSequential />
       </div>
     </>
   );
