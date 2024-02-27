@@ -14,6 +14,7 @@ import HeaderFooter from './projects/headerFooterLayout/HeaderFooter';
 import ProgressBars from './projects/progressBars1/ProgressBars';
 import Tabs from './projects/tabs1/Tabs';
 import TabsTest from './projects/tabs1/TabsTest';
+import Like from './projects/like/Like';
 function App() {
   return (
     <>
@@ -77,8 +78,9 @@ function App() {
       <div>{/* <InfiniteScroll /> */}</div>
       <div>{/* <HeaderFooter /> */}</div>
       <div>{/* <ProgressBars /> */}</div>
+      <div>{/* <TabsTest /> */}</div>
       <div>
-        <TabsTest />
+        <Like />
       </div>
     </>
   );
