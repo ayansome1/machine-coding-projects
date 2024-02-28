@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { Star } from './Star';
-import { StarFilled } from './Star';
 import styles from './Star.module.scss';
 
 interface StarRatingProps {
@@ -17,10 +16,10 @@ const StarRating = ({ max = 5, onClick }: StarRatingProps) => {
 
   const getStar = (index: number) => {
     if (ratingIndex !== null && index <= ratingIndex) {
-      return <StarFilled />;
+      return <Star filled={true} />;
     }
     if (hoveredIndex !== null && index <= hoveredIndex) {
-      return <StarFilled />;
+      return <Star filled={true} />;
     }
     return <Star />;
   };
