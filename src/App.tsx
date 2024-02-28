@@ -18,6 +18,8 @@ import Like from './projects/like/Like';
 import ProgressBarsSequential from './projects/progressBars2/ProgressBarsSequential';
 import StarRating from './projects/starRating/StarRating';
 import TestStar from './projects/starRating/TestStar';
+import TrafficLight from './projects/trafficLight/TrafficLight';
+import TrafficLightTest from './projects/trafficLight/TrafficLightTest';
 function App() {
   return (
     <>
@@ -84,8 +86,9 @@ function App() {
       <div>{/* <TabsTest /> */}</div>
       <div>{/* <Like /> */}</div>
       <div>{/* <ProgressBarsSequential /> */}</div>
+      <div>{/* <TestStar /> */}</div>
       <div>
-        <TestStar />
+        <TrafficLightTest />
       </div>
     </>
   );
