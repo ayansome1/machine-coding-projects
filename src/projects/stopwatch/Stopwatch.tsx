@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import styles from './Stopwatch.module.scss';
 
 const Stopwatch = () => {
   const [time, setTime] = useState(0);
@@ -34,7 +35,9 @@ const Stopwatch = () => {
 
   return (
     <div>
-      {time / 1000} sec
+      <span className={styles.time} onClick={handleStartStopClick}>
+        {time / 1000} sec
+      </span>
       <div>
         <button onClick={handleStartStopClick}>
           {isPaused ? 'Start' : 'Stop'}
