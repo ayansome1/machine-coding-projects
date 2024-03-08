@@ -23,6 +23,7 @@ import TrafficLightTest from './projects/trafficLight/TrafficLightTest';
 import HackerNewsJobBoard from './projects/hackerNewsJobBoard/HackerNewsJobBoard';
 import StopwatchContainer from './projects/stopwatch/StopwatchContainer';
 import TransferListContainer from './projects/transferList/TransferListContainer';
+import UndoableCounter from './projects/undoableCounter/UndoableCounter';
 
 function App() {
   return (
@@ -93,11 +94,10 @@ function App() {
       <div>{/* <TestStar /> */}</div>
       <div>{/* <TrafficLightTest /> */}</div>
       <div>{/* <HackerNewsJobBoard /> */}</div>
+      <div>{/* <StopwatchContainer /> */}</div>
+      <div>{/* <TransferListContainer /> */}</div>
       <div>
-        {/* <StopwatchContainer /> */}
-      </div>
-      <div>
-        <TransferListContainer />
+        <UndoableCounter />
       </div>
     </>
   );
