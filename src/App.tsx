@@ -20,6 +20,8 @@ import StarRating from './projects/starRating/StarRating';
 import TestStar from './projects/starRating/TestStar';
 import TrafficLight from './projects/trafficLight/TrafficLight';
 import TrafficLightTest from './projects/trafficLight/TrafficLightTest';
+import HackerNewsJobBoard from './projects/hackerNewsJobBoard/HackerNewsJobBoard';
+
 function App() {
   return (
     <>
@@ -87,8 +89,9 @@ function App() {
       <div>{/* <Like /> */}</div>
       <div>{/* <ProgressBarsSequential /> */}</div>
       <div>{/* <TestStar /> */}</div>
+      <div>{/* <TrafficLightTest /> */}</div>
       <div>
-        <TrafficLightTest />
+        <HackerNewsJobBoard />
       </div>
     </>
   );
