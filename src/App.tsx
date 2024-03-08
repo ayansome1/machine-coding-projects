@@ -21,6 +21,7 @@ import TestStar from './projects/starRating/TestStar';
 import TrafficLight from './projects/trafficLight/TrafficLight';
 import TrafficLightTest from './projects/trafficLight/TrafficLightTest';
 import HackerNewsJobBoard from './projects/hackerNewsJobBoard/HackerNewsJobBoard';
+import StopwatchContainer from './projects/stopwatch/StopwatchContainer';
 
 function App() {
   return (
@@ -90,8 +91,9 @@ function App() {
       <div>{/* <ProgressBarsSequential /> */}</div>
       <div>{/* <TestStar /> */}</div>
       <div>{/* <TrafficLightTest /> */}</div>
+      <div>{/* <HackerNewsJobBoard /> */}</div>
       <div>
-        <HackerNewsJobBoard />
+        <StopwatchContainer />
       </div>
     </>
   );
