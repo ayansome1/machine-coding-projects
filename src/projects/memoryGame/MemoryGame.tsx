@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import styles from './MemoryGame.module.scss';
 
 const rows = 4;
@@ -27,6 +27,7 @@ const emojis = [
 ];
 
 const MemoryGame = () => {
+  const ref = useRef(null);
   const shuffledArray = useMemo(() => {
     const totalBoxes = rows * rows;
     const arr = emojis.slice(0, totalBoxes / 2);
@@ -37,7 +38,6 @@ const MemoryGame = () => {
       .map(({ value }) => value);
     return shuffledArr;
   }, []);
-  // const shuffledArray = useRandomArray({ rows: rows, emojis: emojis });
   const [count, setCount] = useState(0);
   const [isRevealed, setIsRevealed] = useState({});
   const [selectedEmojiIndexFirst, setSelectedEmojiIndexFirst] = useState(null);
@@ -45,7 +45,22 @@ const MemoryGame = () => {
   const [selectedEmojiIndexSecond, setSelectedEmojiIndexSecond] =
     useState(null);
 
+  const resetLastTwoSelection = (index) => {
+    setIsRevealed((obj) => ({
+      ...obj,
+      [selectedEmojiIndexFirst]: false,
+      [index]: false,
+    }));
+    setSelectedEmojiIndexFirst(null);
+    setSelectedEmojiIndexSecond(null);
+  };
+
   const handleClick = (index) => {
+    if (ref.current !== null) {
+      clearTimeout(ref.current);
+      ref.current = null;
+      // return;
+    }
     setCount((val) => val + 1);
     if (selectedEmojiIndexFirst === null) {
       setSelectedEmojiIndexFirst(index);
@@ -68,6 +83,15 @@ const MemoryGame = () => {
         ...obj,
         [index]: true,
       }));
+
+      if (shuffledArray[selectedEmojiIndexFirst] !== shuffledArray[index]) {
+        const t = setTimeout(() => {
+          resetLastTwoSelection(index);
+          ref.current = null;
+        }, 2000);
+        ref.current = t;
+      }
+
       return;
     }
     if (
@@ -82,6 +106,7 @@ const MemoryGame = () => {
       }));
       setSelectedEmojiIndexFirst(index);
       setSelectedEmojiIndexSecond(null);
+      // resetLastTwoSelection(index);
       return;
     }
     if (
@@ -105,6 +130,12 @@ const MemoryGame = () => {
       setIsWon(true);
     }
   }, [isRevealed]);
+
+  // useEffect(() => {
+  // 	const t = setTimeout(() => {
+
+  // 	})
+  // }, [count])
 
   return (
     <div>
