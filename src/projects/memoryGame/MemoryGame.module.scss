@@ -1,0 +1,13 @@
+.wrapper {
+  display: grid;
+  gap: 10px;
+  grid-auto-rows: minmax(120px, auto);
+}
+
+.card {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	font-size: 32px;
+}

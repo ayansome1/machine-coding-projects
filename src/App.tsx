@@ -24,6 +24,7 @@ import HackerNewsJobBoard from './projects/hackerNewsJobBoard/HackerNewsJobBoard
 import StopwatchContainer from './projects/stopwatch/StopwatchContainer';
 import TransferListContainer from './projects/transferList/TransferListContainer';
 import UndoableCounter from './projects/undoableCounter/UndoableCounter';
+import MemoryGame from './projects/memoryGame/MemoryGame';
 
 function App() {
   return (
@@ -96,8 +97,9 @@ function App() {
       <div>{/* <HackerNewsJobBoard /> */}</div>
       <div>{/* <StopwatchContainer /> */}</div>
       <div>{/* <TransferListContainer /> */}</div>
+      <div>{/* <UndoableCounter /> */}</div>
       <div>
-        <UndoableCounter />
+        <MemoryGame />
       </div>
     </>
   );
