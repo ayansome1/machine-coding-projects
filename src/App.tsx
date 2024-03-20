@@ -25,6 +25,7 @@ import StopwatchContainer from './projects/stopwatch/StopwatchContainer';
 import TransferListContainer from './projects/transferList/TransferListContainer';
 import UndoableCounter from './projects/undoableCounter/UndoableCounter';
 import MemoryGame from './projects/memoryGame/MemoryGame';
+import FlightBooker from './projects/flightBooker/FlightBooker';
 
 function App() {
   return (
@@ -98,8 +99,9 @@ function App() {
       <div>{/* <StopwatchContainer /> */}</div>
       <div>{/* <TransferListContainer /> */}</div>
       <div>{/* <UndoableCounter /> */}</div>
+      <div>{/* <MemoryGame /> */}</div>
       <div>
-        <MemoryGame />
+        <FlightBooker />
       </div>
     </>
   );
