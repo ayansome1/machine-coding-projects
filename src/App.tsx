@@ -27,6 +27,7 @@ import UndoableCounter from './projects/undoableCounter/UndoableCounter';
 import MemoryGame from './projects/memoryGame/MemoryGame';
 import FlightBooker from './projects/flightBooker/FlightBooker';
 import GenerateTable from './projects/generateTable/GenerateTable';
+import MultiStepperContainer from './projects/multiStepper/MultiStepperContainer';
 
 function App() {
   return (
@@ -102,8 +103,9 @@ function App() {
       <div>{/* <UndoableCounter /> */}</div>
       <div>{/* <MemoryGame /> */}</div>
       <div>{/* <FlightBooker /> */}</div>
+      <div>{/* <GenerateTable /> */}</div>
       <div>
-        <GenerateTable />
+        <MultiStepperContainer />
       </div>
     </>
   );

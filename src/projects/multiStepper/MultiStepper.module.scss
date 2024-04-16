@@ -1,0 +1,35 @@
+.content {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.stepperContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px 40px;
+}
+
+.step {
+  border: 1px solid black;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &--active {
+    background-color: blue;
+  }
+}
+
+.divider {
+  flex-grow: 1;
+  border-bottom: 1px solid black;
+  margin: 5px;
+  &--hidden {
+    border-color: transparent;
+  }
+}
