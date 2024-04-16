@@ -28,6 +28,7 @@ import MemoryGame from './projects/memoryGame/MemoryGame';
 import FlightBooker from './projects/flightBooker/FlightBooker';
 import GenerateTable from './projects/generateTable/GenerateTable';
 import MultiStepperContainer from './projects/multiStepper/MultiStepperContainer';
+import SwitchCaseContainer from './projects/switchCase/SwitchCaseContainer';
 
 function App() {
   return (
@@ -104,8 +105,9 @@ function App() {
       <div>{/* <MemoryGame /> */}</div>
       <div>{/* <FlightBooker /> */}</div>
       <div>{/* <GenerateTable /> */}</div>
+      <div>{/* <MultiStepperContainer /> */}</div>
       <div>
-        <MultiStepperContainer />
+        <SwitchCaseContainer />
       </div>
     </>
   );
