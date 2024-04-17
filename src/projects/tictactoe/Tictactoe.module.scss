@@ -1,0 +1,14 @@
+.wrapper {
+  display: grid;
+  gap: 10px;
+	width: 300px;
+	height: 300px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.gridCell {
+	height: 100px;
+	cursor: pointer;
+	// width: 100px;
+}

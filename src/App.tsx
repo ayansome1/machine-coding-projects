@@ -29,6 +29,7 @@ import FlightBooker from './projects/flightBooker/FlightBooker';
 import GenerateTable from './projects/generateTable/GenerateTable';
 import MultiStepperContainer from './projects/multiStepper/MultiStepperContainer';
 import SwitchCaseContainer from './projects/switchCase/SwitchCaseContainer';
+import Tictactoe from './projects/tictactoe/Tictactoe';
 
 function App() {
   return (
@@ -106,8 +107,9 @@ function App() {
       <div>{/* <FlightBooker /> */}</div>
       <div>{/* <GenerateTable /> */}</div>
       <div>{/* <MultiStepperContainer /> */}</div>
+      <div>{/* <SwitchCaseContainer /> */}</div>
       <div>
-        <SwitchCaseContainer />
+        <Tictactoe />
       </div>
     </>
   );
