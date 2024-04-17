@@ -30,6 +30,7 @@ import GenerateTable from './projects/generateTable/GenerateTable';
 import MultiStepperContainer from './projects/multiStepper/MultiStepperContainer';
 import SwitchCaseContainer from './projects/switchCase/SwitchCaseContainer';
 import Tictactoe from './projects/tictactoe/Tictactoe';
+import FeatureFlag from './projects/featureFlag/FeatureFlag';
 
 function App() {
   return (
@@ -108,8 +109,9 @@ function App() {
       <div>{/* <GenerateTable /> */}</div>
       <div>{/* <MultiStepperContainer /> */}</div>
       <div>{/* <SwitchCaseContainer /> */}</div>
+      <div>{/* <Tictactoe /> */}</div>
       <div>
-        <Tictactoe />
+        <FeatureFlag />
       </div>
     </>
   );
