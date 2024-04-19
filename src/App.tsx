@@ -31,6 +31,7 @@ import MultiStepperContainer from './projects/multiStepper/MultiStepperContainer
 import SwitchCaseContainer from './projects/switchCase/SwitchCaseContainer';
 import Tictactoe from './projects/tictactoe/Tictactoe';
 import FeatureFlag from './projects/featureFlag/FeatureFlag';
+import InfinteScroll2 from './projects/infinteScroll2/InfinteScroll2';
 
 function App() {
   return (
@@ -110,8 +111,9 @@ function App() {
       <div>{/* <MultiStepperContainer /> */}</div>
       <div>{/* <SwitchCaseContainer /> */}</div>
       <div>{/* <Tictactoe /> */}</div>
+      <div>{/* <FeatureFlag /> */}</div>
       <div>
-        <FeatureFlag />
+        <InfinteScroll2 />
       </div>
     </>
   );
