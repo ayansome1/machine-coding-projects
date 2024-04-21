@@ -32,6 +32,7 @@ import SwitchCaseContainer from './projects/switchCase/SwitchCaseContainer';
 import Tictactoe from './projects/tictactoe/Tictactoe';
 import FeatureFlag from './projects/featureFlag/FeatureFlag';
 import InfinteScroll2 from './projects/infinteScroll2/InfinteScroll2';
+import OverlappingCircles from './projects/overlappingCircles/OverlappingCircles';
 
 function App() {
   return (
@@ -112,8 +113,9 @@ function App() {
       <div>{/* <SwitchCaseContainer /> */}</div>
       <div>{/* <Tictactoe /> */}</div>
       <div>{/* <FeatureFlag /> */}</div>
+      <div>{/* <InfinteScroll2 /> */}</div>
       <div>
-        <InfinteScroll2 />
+        <OverlappingCircles />
       </div>
     </>
   );
