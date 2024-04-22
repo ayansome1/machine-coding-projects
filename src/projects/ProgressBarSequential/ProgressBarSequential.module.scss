@@ -1,0 +1,14 @@
+@keyframes progress {
+  from {
+    width: 0;
+  }
+}
+
+.bar {
+  border: 1px solid black;
+  &--active {
+    background-color: green;
+    width: 100%;
+    animation: progress 2000ms ease-in 1;
+  }
+}

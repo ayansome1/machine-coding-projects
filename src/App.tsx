@@ -1,6 +1,6 @@
 import Trello from './projects/trello/Trello';
 import AutocompleteContainer from './projects/autocomplete/AutocompleteContainer';
-import Test from './projects/test/Test';
+import ProgressBarSequential from './projects/progressBarSequential/ProgressBarSequential';
 import Modal from './projects/modal/Modal';
 import ModalTest from './projects/modal/ModalTest';
 import Light from './projects/gridLights/Light';
@@ -39,7 +39,9 @@ function App() {
     <>
       <div>{/* <Trello /> */}</div>
       <div>{/* <AutocompleteContainer /> */}</div>
-      <div>{/* <Test /> */}</div>
+      <div>
+        <ProgressBarSequential />
+      </div>
       <div>{/* <ModalTest /> */}</div>
       <div>{/* <Light /> */}</div>
       <div>
@@ -114,9 +116,7 @@ function App() {
       <div>{/* <Tictactoe /> */}</div>
       <div>{/* <FeatureFlag /> */}</div>
       <div>{/* <InfinteScroll2 /> */}</div>
-      <div>
-        <OverlappingCircles />
-      </div>
+      <div>{/* <OverlappingCircles /> */}</div>
     </>
   );
 }
