@@ -33,15 +33,14 @@ import Tictactoe from './projects/tictactoe/Tictactoe';
 import FeatureFlag from './projects/featureFlag/FeatureFlag';
 import InfinteScroll2 from './projects/infinteScroll2/InfinteScroll2';
 import OverlappingCircles from './projects/overlappingCircles/OverlappingCircles';
+import SearchWithAutocomplete from './projects/searchWithAutocomplete/SearchWithAutocomplete';
 
 function App() {
   return (
     <>
       <div>{/* <Trello /> */}</div>
       <div>{/* <AutocompleteContainer /> */}</div>
-      <div>
-        <ProgressBarSequential />
-      </div>
+      <div>{/* <ProgressBarSequential /> */}</div>
       <div>{/* <ModalTest /> */}</div>
       <div>{/* <Light /> */}</div>
       <div>
@@ -117,6 +116,9 @@ function App() {
       <div>{/* <FeatureFlag /> */}</div>
       <div>{/* <InfinteScroll2 /> */}</div>
       <div>{/* <OverlappingCircles /> */}</div>
+      <div>
+        <SearchWithAutocomplete />
+      </div>
     </>
   );
 }
