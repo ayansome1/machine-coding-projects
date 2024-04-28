@@ -12,7 +12,6 @@ const TypingEffect = ({ content = '' }) => {
         setIndex((val) => val + 1);
       }
     }, 100);
-    return;
 
     return () => clearTimeout(ref.current);
   }, [index]);
