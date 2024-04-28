@@ -2,8 +2,8 @@ import styles from './Pagination.module.scss';
 import cx from 'classnames';
 
 const Pagination = ({ current, total, onChange, perPage = 10 }) => {
-  let start = Math.max(0, current - Math.floor(perPage / 2));
-  const end = Math.min(start + perPage - 1, total - 1);
+  let start = Math.max(1, current - Math.floor(perPage / 2));
+  const end = Math.min(start + perPage - 1, total);
   if (end - start + 1 < perPage) {
     start = end - perPage + 1;
   }
@@ -37,7 +37,18 @@ const Pagination = ({ current, total, onChange, perPage = 10 }) => {
 
   return (
     <div>
-      <button onClick={handlePrev} disabled={current === 0}>
+      <button
+        onClick={() => handleChange(1)}
+        disabled={current === 1}
+        className={styles.btn}
+      >
+        {'<<'}
+      </button>
+      <button
+        onClick={handlePrev}
+        disabled={current === 1}
+        className={styles.btn}
+      >
         {'<'}
       </button>
       {getArray().map((pageIndex) => (
@@ -49,8 +60,19 @@ const Pagination = ({ current, total, onChange, perPage = 10 }) => {
           {pageIndex}
         </button>
       ))}
-      <button onClick={handleNext} disabled={current === total - 1}>
+      <button
+        onClick={handleNext}
+        disabled={current === total}
+        className={styles.btn}
+      >
         {'>'}
+      </button>
+      <button
+        onClick={() => handleChange(total)}
+        disabled={current === total}
+        className={styles.btn}
+      >
+        {'>>'}
       </button>
     </div>
   );
