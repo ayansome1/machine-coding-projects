@@ -34,6 +34,7 @@ import FeatureFlag from './projects/featureFlag/FeatureFlag';
 import InfinteScroll2 from './projects/infinteScroll2/InfinteScroll2';
 import OverlappingCircles from './projects/overlappingCircles/OverlappingCircles';
 import SearchWithAutocomplete from './projects/searchWithAutocomplete/SearchWithAutocomplete';
+import ImageAutoCarousel from './projects/imageAutoCarousel/ImageAutoCarousel';
 
 function App() {
   return (
@@ -116,8 +117,9 @@ function App() {
       <div>{/* <FeatureFlag /> */}</div>
       <div>{/* <InfinteScroll2 /> */}</div>
       <div>{/* <OverlappingCircles /> */}</div>
+      <div>{/* <SearchWithAutocomplete /> */}</div>
       <div>
-        <SearchWithAutocomplete />
+        <ImageAutoCarousel />
       </div>
     </>
   );
