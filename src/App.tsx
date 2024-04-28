@@ -35,6 +35,7 @@ import InfinteScroll2 from './projects/infinteScroll2/InfinteScroll2';
 import OverlappingCircles from './projects/overlappingCircles/OverlappingCircles';
 import SearchWithAutocomplete from './projects/searchWithAutocomplete/SearchWithAutocomplete';
 import ImageAutoCarousel from './projects/imageAutoCarousel/ImageAutoCarousel';
+import PaginationContainer from './projects/pagination/PaginationContainer';
 
 function App() {
   return (
@@ -118,8 +119,9 @@ function App() {
       <div>{/* <InfinteScroll2 /> */}</div>
       <div>{/* <OverlappingCircles /> */}</div>
       <div>{/* <SearchWithAutocomplete /> */}</div>
+      <div>{/* <ImageAutoCarousel /> */}</div>
       <div>
-        <ImageAutoCarousel />
+        <PaginationContainer />
       </div>
     </>
   );
