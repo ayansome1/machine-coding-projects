@@ -36,6 +36,7 @@ import OverlappingCircles from './projects/overlappingCircles/OverlappingCircles
 import SearchWithAutocomplete from './projects/searchWithAutocomplete/SearchWithAutocomplete';
 import ImageAutoCarousel from './projects/imageAutoCarousel/ImageAutoCarousel';
 import PaginationContainer from './projects/pagination/PaginationContainer';
+import TypingEffectContainer from './projects/typingEffect/TypingEffectContainer';
 
 function App() {
   return (
@@ -120,8 +121,9 @@ function App() {
       <div>{/* <OverlappingCircles /> */}</div>
       <div>{/* <SearchWithAutocomplete /> */}</div>
       <div>{/* <ImageAutoCarousel /> */}</div>
+      <div>{/* <PaginationContainer /> */}</div>
       <div>
-        <PaginationContainer />
+        <TypingEffectContainer />
       </div>
     </>
   );
