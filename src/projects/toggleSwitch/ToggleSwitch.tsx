@@ -17,7 +17,9 @@ const ToggleSwitch = ({ defaultChecked = false, onChange }) => {
       <span
         role='checkbox'
         aria-checked={checked}
-        className={`${styles.switch} ${checked ? styles.switchOn : ''}`}
+        className={cx(styles.switch, {
+          [styles.switchOn]: checked,
+        })}
         onClick={handleClick}
       >
         <span className={styles.dot}></span>
