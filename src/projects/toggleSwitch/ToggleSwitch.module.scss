@@ -1,0 +1,30 @@
+.checkbox {
+  // height: 0px;
+}
+
+.switch {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  border-radius: 10px;
+  width: 40px;
+  height: 20px;
+  background-color: lightgray;
+
+  .dot {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 20px;
+    background-color: red;
+    border-radius: 10px;
+  }
+
+  &On {
+    .dot {
+      left: unset;
+      right: 0;
+      background-color: green;
+    }
+  }
+}

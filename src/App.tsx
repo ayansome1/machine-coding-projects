@@ -37,6 +37,7 @@ import SearchWithAutocomplete from './projects/searchWithAutocomplete/SearchWith
 import ImageAutoCarousel from './projects/imageAutoCarousel/ImageAutoCarousel';
 import PaginationContainer from './projects/pagination/PaginationContainer';
 import TypingEffectContainer from './projects/typingEffect/TypingEffectContainer';
+import ToggleSwitchContainer from './projects/toggleSwitch/ToggleSwitchContainer';
 
 function App() {
   return (
@@ -122,8 +123,9 @@ function App() {
       <div>{/* <SearchWithAutocomplete /> */}</div>
       <div>{/* <ImageAutoCarousel /> */}</div>
       <div>{/* <PaginationContainer /> */}</div>
+      <div>{/* <TypingEffectContainer /> */}</div>
       <div>
-        <TypingEffectContainer />
+        <ToggleSwitchContainer />
       </div>
     </>
   );
