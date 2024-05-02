@@ -38,6 +38,7 @@ import ImageAutoCarousel from './projects/imageAutoCarousel/ImageAutoCarousel';
 import PaginationContainer from './projects/pagination/PaginationContainer';
 import TypingEffectContainer from './projects/typingEffect/TypingEffectContainer';
 import ToggleSwitchContainer from './projects/toggleSwitch/ToggleSwitchContainer';
+import UseIdleHookContainer from './projects/useIdleHook/UseIdleHookContainer';
 
 function App() {
   return (
@@ -124,8 +125,9 @@ function App() {
       <div>{/* <ImageAutoCarousel /> */}</div>
       <div>{/* <PaginationContainer /> */}</div>
       <div>{/* <TypingEffectContainer /> */}</div>
+      <div>{/* <ToggleSwitchContainer /> */}</div>
       <div>
-        <ToggleSwitchContainer />
+        <UseIdleHookContainer />
       </div>
     </>
   );
