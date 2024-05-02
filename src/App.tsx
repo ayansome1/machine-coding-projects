@@ -39,6 +39,7 @@ import PaginationContainer from './projects/pagination/PaginationContainer';
 import TypingEffectContainer from './projects/typingEffect/TypingEffectContainer';
 import ToggleSwitchContainer from './projects/toggleSwitch/ToggleSwitchContainer';
 import UseIdleHookContainer from './projects/useIdleHook/UseIdleHookContainer';
+import UseAsyncHookContainer from './projects/useAsyncHook/UseAsyncHookContainer';
 
 function App() {
   return (
@@ -127,7 +128,10 @@ function App() {
       <div>{/* <TypingEffectContainer /> */}</div>
       <div>{/* <ToggleSwitchContainer /> */}</div>
       <div>
-        <UseIdleHookContainer />
+        {/* <UseIdleHookContainer /> */}
+      </div>
+      <div>
+        <UseAsyncHookContainer />
       </div>
     </>
   );
