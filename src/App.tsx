@@ -40,6 +40,7 @@ import TypingEffectContainer from './projects/typingEffect/TypingEffectContainer
 import ToggleSwitchContainer from './projects/toggleSwitch/ToggleSwitchContainer';
 import UseIdleHookContainer from './projects/useIdleHook/UseIdleHookContainer';
 import UseAsyncHookContainer from './projects/useAsyncHook/UseAsyncHookContainer';
+import UseDebounceHookContainer from './projects/useDebounceHook/UseDebounceHookContainer';
 
 function App() {
   return (
@@ -127,11 +128,10 @@ function App() {
       <div>{/* <PaginationContainer /> */}</div>
       <div>{/* <TypingEffectContainer /> */}</div>
       <div>{/* <ToggleSwitchContainer /> */}</div>
+      <div>{/* <UseIdleHookContainer /> */}</div>
+      <div>{/* <UseAsyncHookContainer /> */}</div>
       <div>
-        {/* <UseIdleHookContainer /> */}
-      </div>
-      <div>
-        <UseAsyncHookContainer />
+        <UseDebounceHookContainer />
       </div>
     </>
   );
