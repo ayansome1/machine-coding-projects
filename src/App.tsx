@@ -41,6 +41,7 @@ import ToggleSwitchContainer from './projects/toggleSwitch/ToggleSwitchContainer
 import UseIdleHookContainer from './projects/useIdleHook/UseIdleHookContainer';
 import UseAsyncHookContainer from './projects/useAsyncHook/UseAsyncHookContainer';
 import UseDebounceHookContainer from './projects/useDebounceHook/UseDebounceHookContainer';
+import UseThrottleHookContainer from './projects/useThrottleHook/UseThrottleHookContainer';
 
 function App() {
   return (
@@ -130,8 +131,9 @@ function App() {
       <div>{/* <ToggleSwitchContainer /> */}</div>
       <div>{/* <UseIdleHookContainer /> */}</div>
       <div>{/* <UseAsyncHookContainer /> */}</div>
+      <div>{/* <UseDebounceHookContainer /> */}</div>
       <div>
-        <UseDebounceHookContainer />
+        <UseThrottleHookContainer />
       </div>
     </>
   );
